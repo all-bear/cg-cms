@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <web>
+            <groups>
+                <default>
+                    <fields>
+                        <customer_group_cms_home_page>
+                            <label>Customer Group CMS Home Page</label>
+                            <frontend_type>select</frontend_type>
+                            <frontend_model>allbear_cghomepage/adminhtml_system_config_cgCmsPage</frontend_model>
+                            <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </customer_group_cms_home_page>
+                    </fields>
+                </default>
+            </groups>
+        </web>
+    </sections>
+</config>

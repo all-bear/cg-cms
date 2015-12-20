@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <AllBear_CustomerGroupHomepage>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Cms/>
+            </depends>
+        </AllBear_CustomerGroupHomepage>
+    </modules>
+</config>

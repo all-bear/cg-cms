@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <AllBear_CustomerGroupHomepage>
+            <version>0.1.0</version>
+        </AllBear_CustomerGroupHomepage>
+    </modules>
+    <global>
+        <blocks>
+            <allbear_cghomepage>
+                <class>AllBear_CustomerGroupHomepage_Block</class>
+            </allbear_cghomepage>
+        </blocks>
+        <helpers>
+            <allbear_cghomepage>
+                <class>AllBear_CustomerGroupHomepage_Helper</class>
+            </allbear_cghomepage>
+        </helpers>
+        <models>
+            <allbear_cghomepage>
+                <class>AllBear_CustomerGroupHomepage_Model</class>
+            </allbear_cghomepage>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <cms>
+                <args>
+                    <modules>
+                        <allbear_cghomepage before="Mage_Cms">AllBear_CustomerGroupHomepage_Cms</allbear_cghomepage>
+                    </modules>
+                </args>
+            </cms>
+        </routers>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <AllBear_CustomerGroupHomepage>
+                    <files>
+                        <default>AllBear_CustomerGroupHomepage.csv</default>
+                    </files>
+                </AllBear_CustomerGroupHomepage>
+            </modules>
+        </translate>
+    </adminhtml>
+    <phpunit>
+        <suite>
+            <modules>
+                <AllBear_CustomerGroupHomepage />
+            </modules>
+        </suite>
+    </phpunit>
+</config>

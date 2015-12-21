@@ -37,9 +37,6 @@ class AllBear_CustomerGroupHomepage_Test_Controller_Cms_IndexController
     {
         $page = Mage::getModel('cms/page')->load($pageId);
 
-        $helper = Mage::helper('cms');
-        $processor = $helper->getPageTemplateProcessor();
-        $html = $processor->filter($page->getContent());
-        return $html;
+        return Mage::helper('cms')->getPageTemplateProcessor()->filter($page->getContent());
     }
 }

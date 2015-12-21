@@ -30,10 +30,7 @@ class AllBear_CustomerGroupHomepage_Test_Controller_Cms_IndexController
         $this->dispatch('');
 
         $html = $this->_getCmsPageHtml($this->expected($customerGroupId)->getCmsCode());
-        $this->assertResponseBodyContains(
-            $html,
-            $this->getResponse()->getOutputBody()
-        );
+        $this->assertResponseBodyContains($html);
     }
 
     protected function _getCmsPageHtml($pageId)
